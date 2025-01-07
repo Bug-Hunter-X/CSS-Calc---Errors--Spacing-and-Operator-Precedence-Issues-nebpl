@@ -1,0 +1,24 @@
+/* bugSolution.css */
+
+/* Correct usage of calc(): */
+.correct-calc {
+  width: calc(100% - 10px);
+  margin: calc(50% - 10px);
+}
+
+/* Correctly handling negative values: */
+.correct-negative {
+  margin: calc(50% - 10px);
+  width: calc(100% + (-20px));
+}
+
+/* Demonstrating the difference (incorrect usage): */
+.incorrect-calc {
+  width: calc(100%-10px); /* Missing space, might not work as intended */
+  margin: calc(50%-10px); /* Missing space, might not work as intended */
+}
+
+/* Incorrect handling of negative values: */
+.incorrect-negative {
+  margin: calc(50% -10px); /* Incorrect, negative value not wrapped in parentheses */
+} 
